@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body.booz-allen-demo {
+  --bah-black: #000;
+  --bah-white: #fff;
+  --bah-turquoise: #23d2d7;
+  --bah-teal: #00636d;
+  --bah-mist: #f0f3f3;
+  --background-color: var(--bah-white);
+  --text-color: var(--bah-black);
+  --link-color: var(--bah-teal);
+  --link-hover-color: var(--bah-black);
+  --body-font-family: inter, calibri, geneva, sans-serif;
+  --heading-font-family: inter, calibri, geneva, sans-serif;
+  --body-font-size-m: 18px;
+
+  letter-spacing: 0;
+  line-height: 1.6;
+}
+
+body.booz-allen-demo h1,
+body.booz-allen-demo h2,
+body.booz-allen-demo h3 {
+  font-weight: 800;
+  line-height: 1.15;
+  scroll-margin-top: 24px;
+}
+
+body.booz-allen-demo > header {
+  height: auto;
+  background: var(--bah-black);
+  color: var(--bah-white);
+}
+
+body.booz-allen-demo .bah-demo-notice {
+  margin: 0;
+  padding: 8px 24px;
+  background: var(--bah-turquoise);
+  color: var(--bah-black);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+body.booz-allen-demo .bah-demo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  min-height: 88px;
+  margin: auto;
+  padding: 24px 32px;
+}
+
+body.booz-allen-demo .bah-demo-brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+body.booz-allen-demo .bah-demo-brand img {
+  display: block;
+  width: 200px;
+  height: 32px;
+  object-fit: contain;
+}
+
+body.booz-allen-demo .bah-demo-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body.booz-allen-demo > footer a,
+body.booz-allen-demo .bah-demo-nav a {
+  color: var(--bah-white);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+body.booz-allen-demo a:focus-visible,
+body.booz-allen-demo button:focus-visible {
+  outline: 3px solid var(--bah-turquoise);
+  outline-offset: 6px;
+}
+
+body.booz-allen-demo > footer a:hover,
+body.booz-allen-demo .bah-demo-nav a:hover {
+  color: var(--bah-turquoise);
+}
+
+body.booz-allen-demo .bah-demo-footer p {
+  margin: 0;
+  font-size: 13px;
+}
+
+body.booz-allen-demo main > .section {
+  margin: 0;
+}
+
+body.booz-allen-demo main > .section:not(.hero-container) {
+  padding: 56px 0;
+}
+
+body.booz-allen-demo main > .section > div {
+  max-width: 1120px;
+}
+
+body.booz-allen-demo .hero-container .hero-wrapper {
+  max-width: none;
+}
+
+body.booz-allen-demo .hero {
+  display: block;
+  box-sizing: border-box;
+  min-height: 0;
+  max-height: 430px;
+  aspect-ratio: 1900 / 430;
+  padding: 0;
+  isolation: isolate;
+}
+
+body.booz-allen-demo .hero picture {
+  z-index: 0;
+}
+
+body.booz-allen-demo .article-heading h1 {
+  max-width: 980px;
+  margin: 16px 0 24px;
+  font-size: 56px;
+}
+
+body.booz-allen-demo main h2 {
+  margin: 32px 0 24px;
+  font-size: 36px;
+}
+
+body.booz-allen-demo .default-content-wrapper > p:first-child > strong {
+  color: var(--bah-teal);
+  font-size: 13px;
+}
+
+body.booz-allen-demo .article-heading .default-content-wrapper > p {
+  max-width: 900px;
+  margin: 16px 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+body.booz-allen-demo .article .default-content-wrapper > p {
+  margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+body.booz-allen-demo .article-heading .default-content-wrapper > p:first-child,
+body.booz-allen-demo .article-heading .default-content-wrapper > p:last-child {
+  color: #4c4c4c;
+  font-size: 14px;
+}
+
+body.booz-allen-demo .article-heading .default-content-wrapper > p > strong {
+  color: var(--bah-teal);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+body.booz-allen-demo .article .default-content-wrapper {
+  max-width: 760px;
+}
+
+body.booz-allen-demo .article .default-content-wrapper > p:first-child {
+  margin-bottom: 32px;
+  color: #4c4c4c;
+  font-size: 12px;
+}
+
+body.booz-allen-demo .article h2 {
+  margin-top: 48px;
+  font-size: 30px;
+}
+
+body.booz-allen-demo .article blockquote {
+  margin: 40px 0;
+  border-left: 5px solid var(--bah-turquoise);
+  padding: 8px 0 8px 28px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+body.booz-allen-demo .article li {
+  margin: 12px 0;
+}
+
+body.booz-allen-demo .cards.insight > ul {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+  gap: 32px;
+}
+
+body.booz-allen-demo .cards.insight > ul > li {
+  border: 0;
+  background: transparent;
+}
+
+body.booz-allen-demo .cards.insight .cards-card-image img {
+  aspect-ratio: 16 / 10;
+}
+
+body.booz-allen-demo .cards.insight .cards-card-body {
+  gap: 16px;
+  margin: 0;
+  padding: 24px 0;
+}
+
+body.booz-allen-demo .cards.insight .cards-card-body > p {
+  font-size: 16px;
+}
+
+body.booz-allen-demo .cards.insight .cards-card-body > p:first-child {
+  color: var(--bah-teal);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+body.booz-allen-demo .cards.insight .cards-card-body > h3 {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+body.booz-allen-demo .cards.insight .cards-card-body a {
+  border-bottom: 2px solid currentcolor;
+  padding-bottom: 6px;
+  color: var(--bah-black);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+body.booz-allen-demo .cards.insight .cards-card-body a:hover {
+  color: var(--bah-teal);
+  text-decoration: none;
+}
+
+body.booz-allen-demo a.button {
+  border: 2px solid var(--bah-black);
+  border-radius: 0;
+  padding: 14px 24px;
+  background: var(--bah-black);
+  color: var(--bah-white);
+  font-size: 16px;
+  font-weight: 700;
+  white-space: normal;
+}
+
+body.booz-allen-demo a.button:hover {
+  border-color: var(--bah-turquoise);
+  background: var(--bah-turquoise);
+  color: var(--bah-black);
+}
+
+body.booz-allen-demo main > .section:last-of-type {
+  background: var(--bah-mist);
+}
+
+body.booz-allen-demo > footer {
+  border-top: 4px solid var(--bah-turquoise);
+  padding: 40px 32px;
+  background: var(--bah-black);
+  color: var(--bah-white);
+}
+
+body.booz-allen-demo .bah-demo-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1120px;
+  margin: auto;
+}
+
+@media (width < 700px) {
+  body.booz-allen-demo .bah-demo-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px;
+  }
+
+  body.booz-allen-demo .bah-demo-nav ul {
+    gap: 12px 20px;
+  }
+
+  body.booz-allen-demo .hero {
+    aspect-ratio: 16 / 7;
+  }
+
+  body.booz-allen-demo .article-heading h1 {
+    font-size: 36px;
+  }
+
+  body.booz-allen-demo .article-heading .default-content-wrapper > p {
+    font-size: 18px;
+  }
+
+  body.booz-allen-demo .article-heading .default-content-wrapper > p:first-child,
+  body.booz-allen-demo .article-heading .default-content-wrapper > p:last-child {
+    font-size: 13px;
+  }
+
+  body.booz-allen-demo main > .section:not(.hero-container) {
+    padding: 32px 0;
+  }
+
+  body.booz-allen-demo main h2 {
+    font-size: 28px;
+  }
+}

@@ -162,6 +162,11 @@ export function decorateMain(main) {
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
+  if (doc.body.classList.contains('booz-allen-demo')) {
+    const { default: decorateDemoChrome } = await import('./booz-allen-demo.js');
+    await loadCSS(`${window.hlx.codeBasePath}/styles/booz-allen-demo.css`);
+    decorateDemoChrome(doc);
+  }
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);
@@ -184,7 +189,8 @@ async function loadEager(doc) {
  * @param {Element} doc The container element
  */
 async function loadLazy(doc) {
-  loadHeader(doc.querySelector('body > header'));
+  const usesDemoChrome = doc.body.classList.contains('booz-allen-demo');
+  if (!usesDemoChrome) loadHeader(doc.querySelector('body > header'));
 
   const main = doc.querySelector('main');
   await loadSections(main);
@@ -193,7 +199,7 @@ async function loadLazy(doc) {
   const element = hash ? doc.getElementById(hash.substring(1)) : false;
   if (hash && element) element.scrollIntoView();
 
-  loadFooter(doc.querySelector('body > footer'));
+  if (!usesDemoChrome) loadFooter(doc.querySelector('body > footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
